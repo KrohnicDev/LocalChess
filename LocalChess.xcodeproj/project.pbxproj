@@ -14,6 +14,15 @@
 		27C47315247C344B00AF9AEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27C47314247C344B00AF9AEA /* Preview Assets.xcassets */; };
 		27C47318247C344B00AF9AEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C47316247C344B00AF9AEA /* LaunchScreen.storyboard */; };
 		27C47323247C344B00AF9AEA /* LocalChessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C47322247C344B00AF9AEA /* LocalChessTests.swift */; };
+		27C4732F247C348500AF9AEA /* ChessGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C4732E247C348500AF9AEA /* ChessGame.swift */; };
+		27C47332247CDE0F00AF9AEA /* pieces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C47331247CDE0F00AF9AEA /* pieces.swift */; };
+		27C47334247CDE6100AF9AEA /* Pawn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C47333247CDE6100AF9AEA /* Pawn.swift */; };
+		27C47336247CDE6D00AF9AEA /* Knight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C47335247CDE6D00AF9AEA /* Knight.swift */; };
+		27C47338247CDE7500AF9AEA /* Bishop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C47337247CDE7500AF9AEA /* Bishop.swift */; };
+		27C4733A247CDE7D00AF9AEA /* Rook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C47339247CDE7D00AF9AEA /* Rook.swift */; };
+		27C4733C247CDE8400AF9AEA /* Queen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C4733B247CDE8400AF9AEA /* Queen.swift */; };
+		27C4733E247CDE8C00AF9AEA /* King.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C4733D247CDE8C00AF9AEA /* King.swift */; };
+		27C47340247CDEF400AF9AEA /* board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C4733F247CDEF400AF9AEA /* board.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +47,15 @@
 		27C4731E247C344B00AF9AEA /* LocalChessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalChessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C47322247C344B00AF9AEA /* LocalChessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalChessTests.swift; sourceTree = "<group>"; };
 		27C47324247C344B00AF9AEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27C4732E247C348500AF9AEA /* ChessGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessGame.swift; sourceTree = "<group>"; };
+		27C47331247CDE0F00AF9AEA /* pieces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pieces.swift; sourceTree = "<group>"; };
+		27C47333247CDE6100AF9AEA /* Pawn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pawn.swift; sourceTree = "<group>"; };
+		27C47335247CDE6D00AF9AEA /* Knight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knight.swift; sourceTree = "<group>"; };
+		27C47337247CDE7500AF9AEA /* Bishop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bishop.swift; sourceTree = "<group>"; };
+		27C47339247CDE7D00AF9AEA /* Rook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rook.swift; sourceTree = "<group>"; };
+		27C4733B247CDE8400AF9AEA /* Queen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queen.swift; sourceTree = "<group>"; };
+		27C4733D247CDE8C00AF9AEA /* King.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = King.swift; sourceTree = "<group>"; };
+		27C4733F247CDEF400AF9AEA /* board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = board.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +97,7 @@
 		27C4730A247C344900AF9AEA /* LocalChess */ = {
 			isa = PBXGroup;
 			children = (
+				27C4732D247C346800AF9AEA /* Model */,
 				27C4730B247C344900AF9AEA /* AppDelegate.swift */,
 				27C4730D247C344900AF9AEA /* SceneDelegate.swift */,
 				27C4730F247C344900AF9AEA /* ContentView.swift */,
@@ -105,6 +124,30 @@
 				27C47324247C344B00AF9AEA /* Info.plist */,
 			);
 			path = LocalChessTests;
+			sourceTree = "<group>";
+		};
+		27C4732D247C346800AF9AEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27C47330247CDDFC00AF9AEA /* Pieces */,
+				27C4732E247C348500AF9AEA /* ChessGame.swift */,
+				27C4733F247CDEF400AF9AEA /* board.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		27C47330247CDDFC00AF9AEA /* Pieces */ = {
+			isa = PBXGroup;
+			children = (
+				27C47331247CDE0F00AF9AEA /* pieces.swift */,
+				27C47333247CDE6100AF9AEA /* Pawn.swift */,
+				27C47335247CDE6D00AF9AEA /* Knight.swift */,
+				27C47337247CDE7500AF9AEA /* Bishop.swift */,
+				27C47339247CDE7D00AF9AEA /* Rook.swift */,
+				27C4733B247CDE8400AF9AEA /* Queen.swift */,
+				27C4733D247CDE8C00AF9AEA /* King.swift */,
+			);
+			path = Pieces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,8 +252,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				27C4730C247C344900AF9AEA /* AppDelegate.swift in Sources */,
+				27C47334247CDE6100AF9AEA /* Pawn.swift in Sources */,
+				27C47340247CDEF400AF9AEA /* board.swift in Sources */,
 				27C4730E247C344900AF9AEA /* SceneDelegate.swift in Sources */,
 				27C47310247C344900AF9AEA /* ContentView.swift in Sources */,
+				27C47338247CDE7500AF9AEA /* Bishop.swift in Sources */,
+				27C4733A247CDE7D00AF9AEA /* Rook.swift in Sources */,
+				27C4733E247CDE8C00AF9AEA /* King.swift in Sources */,
+				27C4733C247CDE8400AF9AEA /* Queen.swift in Sources */,
+				27C47332247CDE0F00AF9AEA /* pieces.swift in Sources */,
+				27C4732F247C348500AF9AEA /* ChessGame.swift in Sources */,
+				27C47336247CDE6D00AF9AEA /* Knight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
